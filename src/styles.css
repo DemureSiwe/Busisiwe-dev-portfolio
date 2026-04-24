@@ -124,8 +124,9 @@ body {
 }
 
 .heroTittle {
-  font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Syne", sans-serif;
   font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
   line-height: 0.8;
   letter-spacing: -5px;
 }
@@ -148,7 +149,7 @@ body {
 .blobImage {
   width: 250px;
   aspect-ratio: 1;
-  background: url(./images/Profile\ blue\ blazer\ no\ bg.png) center/cover;
+  background: url(./images/Headshort\ blue\ blazer\ no\ bg.png) center/cover;
   background-color: var(--accent);
   border: 2px solid#ffffff;
   animation: morph 6s ease-in-out infinite;
