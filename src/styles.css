@@ -197,3 +197,28 @@ body {
   color: var(--accent);
   transform: translateX(10px);
 }
+
+/*---statCard---*/
+.statsCard {
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: center;
+}
+.statIcon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.statV {
+  font-family: "Syne";
+  font-weight: 800;
+  font-size: 3rem;
+}
+.statLable {
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+  color: var(--text-dim);
+}
