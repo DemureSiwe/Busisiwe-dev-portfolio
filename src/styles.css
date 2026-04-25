@@ -121,6 +121,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .heroTittle {
@@ -164,4 +165,35 @@ body {
   50% {
     border-radius: 30% 60% 70% 40%/ 50% 60% 30% 60%;
   }
+}
+
+/*---workList--*/
+.workList {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+.cardTittle {
+  font-family: "Syne", sans-serif;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.workItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid var(--glass-border);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.workItem span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.workItem:hover {
+  color: var(--accent);
+  transform: translateX(10px);
 }
