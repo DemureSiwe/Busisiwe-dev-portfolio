@@ -311,3 +311,80 @@ body {
     opacity: 0.3;
   }
 }
+
+/*---responsive*/
+@media (nax-width: 1320px) {
+  .heroTittle {
+    font-size: clamp(3rem, 6vw, 6rem);
+  }
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    grid-column: span 2;
+  }
+  .workList {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .stackCard {
+    grid-column: span 1;
+  }
+}
+
+/*---mobile---*/
+@media (max-width: 780px) {
+  .appShell {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .navRail {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 10px 20px;
+    justify-content: space-between;
+  }
+
+  .navLogo,
+  .navBtn {
+    margin-bottom: 0;
+  }
+  .navLinks {
+    display: flex;
+    gap: 10px;
+  }
+  .navBottom {
+    margin-top: 0;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero,
+  .workList,
+  .stackCard,
+  .statsCard,
+  .contactBtn,
+  .statusbox {
+    grid-column: span 1;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 20px;
+  }
+  .heroSubtittles {
+    margin: 20px auto 0;
+  }
+  .blobImage {
+    width: 180px;
+  }
+  body {
+    display: block;
+  }
+}
