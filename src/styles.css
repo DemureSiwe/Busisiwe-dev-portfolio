@@ -222,3 +222,39 @@ body {
   letter-spacing: 2px;
   color: var(--text-dim);
 }
+
+/*---stack Card---*/
+.stackCard {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.stackGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+.stackItem {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  padding: 15px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+}
+.stackItem i {
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.stackItem:hover {
+  background: var(--accent);
+  color: #000;
+  cursor: pointer;
+}
+.stackItem:hover i {
+  color: #000;
+  cursor: pointer;
+}
